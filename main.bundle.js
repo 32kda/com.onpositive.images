@@ -229,14 +229,15 @@ var PictureCategoryComponent = (function () {
         this.columnItems = Array.apply(null, { length: this.columns }).map(Number.call, Number);
         if (this.filterStr.length >= 3) {
             this.images = this.item.getImages().filter(function (cur) { return cur.indexOf(_this.filterStr) > -1; });
-            var size = this.item.getImages().length;
-            var rows = Math.ceil(size / 20);
+            var size = this.images.length;
+            var rows = Math.ceil(size / this.columns);
             this.rowItems = Array.apply(null, { length: rows }).map(Number.call, Number);
         }
         else {
             this.rowItems = [];
             this.images = this.item.getImages();
         }
+        console.log(this.item.getName() + ' ' + this.rowItems.length);
     };
     PictureCategoryComponent.prototype.hasItem = function (row, col) {
         var idx = row * this.columns + col;
