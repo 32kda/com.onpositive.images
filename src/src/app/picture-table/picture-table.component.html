@@ -1,0 +1,7 @@
+Please enter at least 3 chars to filter icons: <input (keyup)="onKey($event)">
+<hr>
+<table class="tftable">  
+  <tr app-picture-category *ngFor="let item of items | filter:filterStr"
+	[item] = "item" [filterStr] = "filterStr">
+  </tr>
+</table>

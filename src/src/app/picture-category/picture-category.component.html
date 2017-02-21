@@ -1,0 +1,6 @@
+<tr><td colspan="20">{{item.getName()}}</td></tr>
+<tr *ngFor="let i of rowItems">
+	<td *ngFor="let j of columnItems">
+		<img *ngIf="hasItem(i,j)" src=	"{{getItem(i,j)}}"/>
+	</td>
+</tr>

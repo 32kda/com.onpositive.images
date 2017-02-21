@@ -1,0 +1,6 @@
+table.tftable {color:#333333;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
+table.tftable th {background-color:#b8b8b8;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:left;}
+table.tftable tr {background-color:#ffffff;}
+table.tftable td {border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
+table.tftable tr:hover {background-color: #DDD; left: .1em;}
+.selected { background-color: #CFD8DC !important;}
